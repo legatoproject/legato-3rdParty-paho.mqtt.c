@@ -41,11 +41,11 @@
  * @endcond
  * @cond MQTTClient_main
  * @mainpage MQTT Client library for C (MQTTClient)
- * &copy; Copyright 2009, 2025 IBM Corp., Ian Craggs and others
+ * &copy; Copyright 2009, 2026 IBM Corp., Ian Craggs and others
  *
  * @brief An MQTT client library in C.
  *
- * Version 1.3.15
+ * Version 1.3.16
  *
  * These pages describe the original more synchronous API which might be
  * considered easier to use.  Some of the calls will block.  For the new
