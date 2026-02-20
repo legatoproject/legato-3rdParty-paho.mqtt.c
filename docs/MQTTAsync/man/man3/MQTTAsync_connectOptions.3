@@ -1,4 +1,4 @@
-.TH "MQTTAsync_connectOptions" 3 "Sat Aug 16 2025 14:15:23" "Paho Asynchronous MQTT C Client Library" \" -*- nroff -*-
+.TH "MQTTAsync_connectOptions" 3 "Fri Feb 20 2026 15:12:33" "Paho Asynchronous MQTT C Client Library" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -174,7 +174,7 @@ An array of null-terminated strings specifying the servers to
 
 .fi
 .PP
- which the client will connect\&. Each string takes the form \fIprotocol://host:port\fP\&. \fIprotocol\fP must be \fItcp\fP, \fIssl\fP, \fIws\fP or \fIwss\fP\&. The TLS enabled prefixes (ssl, wss) are only valid if a TLS version of the library is linked with\&. For \fIhost\fP, you can specify either an IP address or a domain name\&. For instance, to connect to a server running on the local machines with the default MQTT port, specify \fItcp://localhost:1883\fP\&. 
+ which the client will connect\&. Each string takes the form \fIprotocol://host:port\fP\&. \fIprotocol\fP must be \fItcp\fP, \fIssl\fP, \fItls\fP, \fIws\fP or \fIwss\fP\&. The TLS enabled prefixes (ssl, tls, wss) are only valid if a TLS version of the library is linked with\&. For \fIhost\fP, you can specify either an IP address or a domain name\&. For instance, to connect to a server running on the local machines with the default MQTT port, specify \fItcp://localhost:1883\fP\&. 
 .SS "int MQTTVersion"
 Sets the version of MQTT to be used on the connect\&. MQTTVERSION_DEFAULT (0) = default: start with 3\&.1\&.1, and if that fails, fall back to 3\&.1 MQTTVERSION_3_1 (3) = only try version 3\&.1 MQTTVERSION_3_1_1 (4) = only try version 3\&.1\&.1 
 .SS "int automaticReconnect"

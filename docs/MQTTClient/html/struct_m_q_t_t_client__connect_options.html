@@ -313,7 +313,7 @@ Data Fields</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>An optional array of null-terminated strings specifying the servers to which the client will connect. Each string takes the form <em>protocol://host:port</em>. <em>protocol</em> must be <em>tcp</em>, <em>ssl</em>, <em>ws</em> or <em>wss</em>. The TLS enabled prefixes (ssl, wss) are only valid if a TLS version of the library is linked with. For <em>host</em>, you can specify either an IP address or a host name. For instance, to connect to a server running on the local machines with the default MQTT port, specify <em>tcp://localhost:1883</em>. If this list is empty (the default), the server URI specified on <a class="el" href="_m_q_t_t_client_8h.html#a9a0518d9ca924d12c1329dbe3de5f2b6">MQTTClient_create()</a> is used. </p>
+<p>An optional array of null-terminated strings specifying the servers to which the client will connect. Each string takes the form <em>protocol://host:port</em>. <em>protocol</em> must be <em>tcp</em>, <em>ssl</em>, <em>ws</em> or <em>wss</em>. The TLS enabled prefixes (ssl, tls, wss) are only valid if a TLS version of the library is linked with. For <em>host</em>, you can specify either an IP address or a host name. For instance, to connect to a server running on the local machines with the default MQTT port, specify <em>tcp://localhost:1883</em>. If this list is empty (the default), the server URI specified on <a class="el" href="_m_q_t_t_client_8h.html#a9a0518d9ca924d12c1329dbe3de5f2b6">MQTTClient_create()</a> is used. </p>
 
 </div>
 </div>

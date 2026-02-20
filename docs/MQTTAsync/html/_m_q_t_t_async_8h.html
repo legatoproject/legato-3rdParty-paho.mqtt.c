@@ -1781,10 +1781,10 @@ Functions</h2></td></tr>
     <tr><td class="paramname">handle</td><td>A pointer to an <a class="el" href="#a0db1d736cdc0c864fe41abb3afd605bd">MQTTAsync</a> handle. The handle is populated with a valid client reference following a successful return from this function. </td></tr>
     <tr><td class="paramname">serverURI</td><td>A null-terminated string specifying the server to which the client will connect. It takes the form <em>protocol://host:port</em> where <em>protocol</em> must be: <br  />
  <em>tcp://</em> or <em>mqtt://</em> - Insecure TCP <br  />
- <em>ssl://</em> or <em>mqtts://</em> - Encrypted SSL/TLS <br  />
+ <em>ssl://</em> or <em>tls://</em> or <em>mqtts://</em> - Encrypted SSL/TLS <br  />
  <em>ws://</em> - Insecure websockets <br  />
  <em>wss://</em> - Secure web sockets <br  />
- The TLS enabled prefixes (ssl, mqtts, wss) are only valid if a TLS version of the library is linked with. For <em>host</em>, you can specify either an IP address or a host name. For instance, to connect to a server running on the local machines with the default MQTT port, specify <em>tcp://localhost:1883</em>. </td></tr>
+ The TLS enabled prefixes (ssl, tls, mqtts, wss) are only valid if a TLS version of the library is linked with. For <em>host</em>, you can specify either an IP address or a host name. For instance, to connect to a server running on the local machines with the default MQTT port, specify <em>tcp://localhost:1883</em>. </td></tr>
     <tr><td class="paramname">clientId</td><td>The client identifier passed to the server when the client connects to it. It is a null-terminated UTF-8 encoded string. </td></tr>
     <tr><td class="paramname">persistence_type</td><td>The type of persistence to be used by the client: <br  />
  <a class="el" href="_m_q_t_t_client_persistence_8h.html#ae01e089313a65ac4661ed216b6ac00fa">MQTTCLIENT_PERSISTENCE_NONE</a>: Use in-memory persistence. If the device or system on which the client is running fails or is switched off, the current state of any in-flight messages is lost and some messages may not be delivered even at QoS1 and QoS2. <br  />

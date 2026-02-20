@@ -1,4 +1,4 @@
-.TH "MQTTAsync.h" 3 "Sat Aug 16 2025 14:15:23" "Paho Asynchronous MQTT C Client Library" \" -*- nroff -*-
+.TH "MQTTAsync.h" 3 "Fri Feb 20 2026 15:12:33" "Paho Asynchronous MQTT C Client Library" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -919,13 +919,13 @@ This function creates an MQTT client ready for connection to the specified serve
 .br
  \fItcp://\fP or \fImqtt://\fP - Insecure TCP 
 .br
- \fIssl://\fP or \fImqtts://\fP - Encrypted SSL/TLS 
+ \fIssl://\fP or \fItls://\fP or \fImqtts://\fP - Encrypted SSL/TLS 
 .br
  \fIws://\fP - Insecure websockets 
 .br
  \fIwss://\fP - Secure web sockets 
 .br
- The TLS enabled prefixes (ssl, mqtts, wss) are only valid if a TLS version of the library is linked with\&. For \fIhost\fP, you can specify either an IP address or a host name\&. For instance, to connect to a server running on the local machines with the default MQTT port, specify \fItcp://localhost:1883\fP\&. 
+ The TLS enabled prefixes (ssl, tls, mqtts, wss) are only valid if a TLS version of the library is linked with\&. For \fIhost\fP, you can specify either an IP address or a host name\&. For instance, to connect to a server running on the local machines with the default MQTT port, specify \fItcp://localhost:1883\fP\&. 
 .br
 \fIclientId\fP The client identifier passed to the server when the client connects to it\&. It is a null-terminated UTF-8 encoded string\&. 
 .br

@@ -1,4 +1,4 @@
-.TH "MQTTClient_connectOptions" 3 "Sat Aug 16 2025 14:15:23" "Paho MQTT C Client Library" \" -*- nroff -*-
+.TH "MQTTClient_connectOptions" 3 "Fri Feb 20 2026 15:12:33" "Paho MQTT C Client Library" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -145,7 +145,7 @@ This is a pointer to an \fBMQTTClient_SSLOptions\fP structure\&. If your applica
 .SS "int serverURIcount"
 The number of entries in the optional serverURIs array\&. Defaults to 0\&. 
 .SS "char* const* serverURIs"
-An optional array of null-terminated strings specifying the servers to which the client will connect\&. Each string takes the form \fIprotocol://host:port\fP\&. \fIprotocol\fP must be \fItcp\fP, \fIssl\fP, \fIws\fP or \fIwss\fP\&. The TLS enabled prefixes (ssl, wss) are only valid if a TLS version of the library is linked with\&. For \fIhost\fP, you can specify either an IP address or a host name\&. For instance, to connect to a server running on the local machines with the default MQTT port, specify \fItcp://localhost:1883\fP\&. If this list is empty (the default), the server URI specified on \fBMQTTClient_create()\fP is used\&. 
+An optional array of null-terminated strings specifying the servers to which the client will connect\&. Each string takes the form \fIprotocol://host:port\fP\&. \fIprotocol\fP must be \fItcp\fP, \fIssl\fP, \fIws\fP or \fIwss\fP\&. The TLS enabled prefixes (ssl, tls, wss) are only valid if a TLS version of the library is linked with\&. For \fIhost\fP, you can specify either an IP address or a host name\&. For instance, to connect to a server running on the local machines with the default MQTT port, specify \fItcp://localhost:1883\fP\&. If this list is empty (the default), the server URI specified on \fBMQTTClient_create()\fP is used\&. 
 .SS "int MQTTVersion"
 Sets the version of MQTT to be used on the connect\&. MQTTVERSION_DEFAULT (0) = default: start with 3\&.1\&.1, and if that fails, fall back to 3\&.1 MQTTVERSION_3_1 (3) = only try version 3\&.1 MQTTVERSION_3_1_1 (4) = only try version 3\&.1\&.1 MQTTVERSION_5 (5) = only try version 5\&.0
 
